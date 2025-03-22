@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		22AA8DF52D8C399500E3A66E /* SpeziLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA8DF42D8C399500E3A66E /* SpeziLLM */; };
+		22AA8DF72D8C399500E3A66E /* SpeziLLMFog in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA8DF62D8C399500E3A66E /* SpeziLLMFog */; };
+		22AA8DF92D8C399500E3A66E /* SpeziLLMLocal in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA8DF82D8C399500E3A66E /* SpeziLLMLocal */; };
+		22AA8DFB2D8C399500E3A66E /* SpeziLLMLocalDownload in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA8DFA2D8C399500E3A66E /* SpeziLLMLocalDownload */; };
+		22AA8DFD2D8C399500E3A66E /* SpeziLLMOpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 22AA8DFC2D8C399500E3A66E /* SpeziLLMOpenAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		221AC63F2D8C2F17003B373E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AA8DFB2D8C399500E3A66E /* SpeziLLMLocalDownload in Frameworks */,
+				22AA8DF92D8C399500E3A66E /* SpeziLLMLocal in Frameworks */,
+				22AA8DF52D8C399500E3A66E /* SpeziLLM in Frameworks */,
+				22AA8DFD2D8C399500E3A66E /* SpeziLLMOpenAI in Frameworks */,
+				22AA8DF72D8C399500E3A66E /* SpeziLLMFog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,11 @@
 			);
 			name = LocalLLM;
 			packageProductDependencies = (
+				22AA8DF42D8C399500E3A66E /* SpeziLLM */,
+				22AA8DF62D8C399500E3A66E /* SpeziLLMFog */,
+				22AA8DF82D8C399500E3A66E /* SpeziLLMLocal */,
+				22AA8DFA2D8C399500E3A66E /* SpeziLLMLocalDownload */,
+				22AA8DFC2D8C399500E3A66E /* SpeziLLMOpenAI */,
 			);
 			productName = LocalLLM;
 			productReference = 221AC62E2D8C2F16003B373E /* LocalLLM.app */;
@@ -195,6 +213,9 @@
 			);
 			mainGroup = 221AC6252D8C2F15003B373E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 221AC62F2D8C2F16003B373E /* Products */;
 			projectDirPath = "";
@@ -558,6 +579,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/StanfordSpezi/SpeziLLM";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22AA8DF42D8C399500E3A66E /* SpeziLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLM;
+		};
+		22AA8DF62D8C399500E3A66E /* SpeziLLMFog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMFog;
+		};
+		22AA8DF82D8C399500E3A66E /* SpeziLLMLocal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMLocal;
+		};
+		22AA8DFA2D8C399500E3A66E /* SpeziLLMLocalDownload */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMLocalDownload;
+		};
+		22AA8DFC2D8C399500E3A66E /* SpeziLLMOpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22AA8DF32D8C399500E3A66E /* XCRemoteSwiftPackageReference "SpeziLLM" */;
+			productName = SpeziLLMOpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 221AC6262D8C2F15003B373E /* Project object */;
 }
